@@ -1,0 +1,81 @@
+{
+	/* Appereance */
+	"layer": "top",
+	"position": "top",
+	"exclusive": true,
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["cpu", "memory", "disk"],
+	"modules-right": ["network", "pulseaudio", "battery", "clock"],
+
+	/* Modules Configuration */
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "tooltip": false,
+      "all-outputs": false,
+      "sort-by-number": true,
+      "disable-scroll": false,
+      "active-only": false,
+      "show-special": false
+	},
+
+	"cpu": {
+		"interval": 10,
+		"format": " {usage}%",
+		"max-length": 10
+	},
+
+	"memory": {
+		"interval": 30,
+		"format": " {}%",
+		"max-length": 10
+	},
+
+	"disk": {
+		"interval": 30,
+		"format": " {percentage_free}%"
+	},
+
+	"network": {
+		"format-wifi": "󰖩 {ipaddr}",
+		"format-ethernet": " {ipaddr}",
+		"format-disconnected": "󱚵/󰈂",
+		"tooltip-format": "{ifname}",
+		"tooltip-format-wifi": "󰖩 {essid}",
+		"tooltip-format-ethernet": " {ipaddr",
+		"tooltip-format-disconnected": "Disconnected",
+		"max-length": 50
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": " ",
+		"format-icons": {
+		"headphone": " ",
+		"default": ["", ""]
+	},
+		"scroll-step": 1,
+		"on-click": "pavucontrol",
+		"tooltip": false
+	},
+
+	"battery": {
+		"interval": 10,
+		"states": {
+			"good": 100,
+			"warning": 50,
+			"critical": 25
+	},
+		"format": "󰁹 {capacity}%",
+		"format-charging": "󰂅 {capacity}%",
+		"format-plugged": " {capacity}%",
+		"tooltip": "false",
+		"max-length": 25
+	},
+
+	"clock": {
+		"interval": 60,
+		"format": "󰥔 {:%H:%M}",
+		"tooltip-format": "{:%A, %d %b %Y}",
+		"max-length": 25
+	}
+}

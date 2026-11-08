@@ -1,0 +1,62 @@
+* {
+    bg-col: #282a36;
+    bg-col-light: #282a36;
+    border-col: #bd93f9;
+    selected-col: #44475a;
+
+    purple: #bd93f9;
+    fg-col: #f8f8f2;
+    grey: #6272a4;
+
+    width: 600;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    width: 400px;
+    height: 55px;
+    border: 2px;
+    border-color: @purple;
+    border-radius: 12px;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+    padding: 12px;
+    children: [inputbar];
+    vertical-align: 0.5;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @bg-col;
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+    spacing: 10px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+prompt {
+    background-color: @bg-col;
+    text-color: @purple;
+    font: "JetBrainsMono Nerd Font 12";
+    padding: 4px;
+}
+
+entry {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    placeholder: "Search...";
+    placeholder-color: @purple;
+    cursor: text;
+    padding: 6px;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color: inherit;
+}
+

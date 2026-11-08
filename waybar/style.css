@@ -1,0 +1,77 @@
+* {
+/*----- Bacisc -----*/
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+		font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+tooltip {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+tooltip label {
+    color: #ffffff;
+}
+
+#workspaces,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+    color: #ffffff;
+    padding: 4px 12px;
+    margin: 4px 3px;
+    border-radius: 10px;
+}
+
+/* ---------- Workspaces ---------- */
+#workspaces {
+    padding: 2px 6px;
+}
+
+#workspaces button {
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+		color: #ffffff;
+		border: 2px solid #ffffff;
+		border-radius: 50px;
+}
+
+/*----- Battery -----*/
+#battery.charging,
+#battery.plugged,
+#battery.warning.charging,
+#battery.warning.plugged,
+#battery.critical.charging,
+#battery.critical.plugged {
+		background-color: transparent;
+		color: #00ff00;
+}
+
+#battery.warning {
+		background-color: transparent;
+		color: #ff991c;
+}
+
+#battery.critical:not(.charging) {
+    background-color: transparent;
+		color: #ff0000;
+}

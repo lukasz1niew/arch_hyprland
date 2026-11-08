@@ -1,0 +1,14 @@
+format = """
+$directory\
+$character"""
+
+[directory]
+truncation_length = 0
+#truncation_symbol = '…/'
+home_symbol = '~'
+style = 'bold #bd93f9'
+read_only = ''
+
+[character]
+success_symbol = '[❯](bold #a6e3a1)'
+error_symbol = '[❮](bold #f38ba8)'
