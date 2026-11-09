@@ -38,11 +38,8 @@
 	"network": {
 		"format-wifi": "󰖩 {ipaddr}",
 		"format-ethernet": " {ipaddr}",
-		"format-disconnected": "󱚵/󰈂",
+		"format-disconnected": " Not Connected!",
 		"tooltip-format": "{ifname}",
-		"tooltip-format-wifi": "󰖩 {essid}",
-		"tooltip-format-ethernet": " {ipaddr",
-		"tooltip-format-disconnected": "Disconnected",
 		"max-length": 50
 	},
 
