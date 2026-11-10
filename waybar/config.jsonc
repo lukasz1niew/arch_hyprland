@@ -39,7 +39,7 @@
 		"format-wifi": "󰖩 {ipaddr}",
 		"format-ethernet": " {ipaddr}",
 		"format-disconnected": " Not Connected!",
-		"tooltip-format": "{ifname}",
+		"tooltip-format": "{essid}",
 		"max-length": 50
 	},
 
