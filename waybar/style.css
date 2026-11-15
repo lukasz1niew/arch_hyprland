@@ -90,15 +90,9 @@ tooltip label {
 }
 #battery.charging,
 #battery.plugged,
-#battery.warning.charging,
-#battery.warning.plugged,
 #battery.critical.charging,
 #battery.critical.plugged {
 		color: #00ff00;
-}
-
-#battery.warning {
-		color: #ff991c;
 }
 
 #battery.critical:not(.charging) {
