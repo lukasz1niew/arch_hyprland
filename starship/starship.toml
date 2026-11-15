@@ -8,7 +8,7 @@ add_newline = true
 [directory]
 truncation_length = 0
 read_only = ''
-style = 'bold #CBA6F7'
+style = 'bold ##89B4FA'
 
 # =========================================
 # CHARACTER CONFIGURATION
