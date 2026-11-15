@@ -5,7 +5,6 @@ add_newline = true
 # =========================================
 # DIRECTORY CONFIGURATION
 # =========================================
-
 [directory]
 truncation_length = 0
 read_only = ''
@@ -14,7 +13,6 @@ style = 'bold #CBA6F7'
 # =========================================
 # CHARACTER CONFIGURATION
 # =========================================
-
 [character]
 disabled = false
 success_symbol = "[❯](bold #A6E3A1)"
