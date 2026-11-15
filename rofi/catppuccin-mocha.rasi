@@ -1,0 +1,156 @@
+
+* {
+    /* Catppuccin Mocha palette */
+    bg-col: #1e1e2e;
+    bg-col-light: #313244;
+    bg-col-dark: #181825;
+    border-col: #cba6f7;
+    selected-col: #45475a;
+
+    purple: #cba6f7;
+    pink: #f5c2e7;
+    blue: #89b4fa;
+    cyan: #94e2d5;
+    green: #a6e3a1;
+    red: #f38ba8;
+    yellow: #f9e2af;
+    peach: #fab387;
+
+    fg-col: #cdd6f4;
+    fg-muted: #a6adc8;
+    grey: #6c7086;
+
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+/* WINDOW */
+window {
+    width: 600px;
+    border: 2px;
+    border-color: @border-col;
+    border-radius: 12px;
+    background-color: @bg-col;
+}
+
+/* MAIN CONTAINER */
+mainbox {
+    background-color: @bg-col;
+    padding: 12px;
+    spacing: 10px;
+    children: [inputbar, listview];
+}
+
+/* SEARCH BAR */
+inputbar {
+    children: [prompt, entry];
+    background-color: @bg-col-light;
+    border: 1px;
+    border-color: @selected-col;
+    border-radius: 8px;
+    padding: 10px;
+    spacing: 10px;
+}
+
+/* PROMPT */
+prompt {
+    background-color: transparent;
+    text-color: @purple;
+    font: "JetBrainsMono Nerd Font 12";
+    padding: 4px;
+}
+
+/* INPUT */
+entry {
+    background-color: transparent;
+    text-color: @fg-col;
+    placeholder: "Search...";
+    placeholder-color: @grey;
+    cursor: text;
+    padding: 6px;
+}
+
+/* RESULTS LIST */
+listview {
+    background-color: @bg-col;
+    columns: 1;
+    lines: 6;
+    spacing: 5px;
+    fixed-height: false;
+    scrollbar: true;
+    border: 0px;
+    padding: 4px;
+}
+
+/* RESULT ELEMENT */
+element {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    border-radius: 8px;
+    padding: 9px;
+    spacing: 10px;
+}
+
+/* SELECTED RESULT */
+element selected {
+    background-color: @selected-col;
+    text-color: @purple;
+    border: 1px;
+    border-color: @purple;
+    border-radius: 8px;
+}
+
+/* RESULT ICON */
+element-icon {
+    background-color: transparent;
+    text-color: inherit;
+    size: 24px;
+}
+
+/* RESULT TEXT */
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+/* SCROLLBAR */
+scrollbar {
+    background-color: @bg-col-light;
+    handle-color: @purple;
+    border-radius: 8px;
+    width: 5px;
+    padding: 0;
+}
+
+/* MESSAGE */
+message {
+    background-color: @bg-col;
+    border-color: @selected-col;
+    padding: 8px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @fg-muted;
+    padding: 6px;
+}
+
+/* MODE SWITCHER */
+mode-switcher {
+    background-color: @bg-col;
+    padding: 5px;
+    spacing: 5px;
+}
+
+button {
+    background-color: @bg-col-light;
+    text-color: @fg-muted;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+button selected {
+    background-color: @purple;
+    text-color: @bg-col;
+}
+
