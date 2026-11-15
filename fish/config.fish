@@ -7,7 +7,7 @@ set fish_greeting ""
 #				ALIASES		
 # ===================
 alias ls='eza --icons -la --header'
-alias syu='sudo $HOME/shell_scripts/arch_system_update'
+alias syu='sudo $HOME/shell_scripts/arch_system_update.sh'
 alias age='$HOME/shell_scripts/os_age.sh'
 alias cat='bat'
 
