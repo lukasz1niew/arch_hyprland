@@ -51,7 +51,6 @@
 			"interval": 10,
 			"states": {
 				"good": 100,
-				"warning": 50,
 				"critical": 25
 				},
 	  "format": "{icon} {capacity}%",
